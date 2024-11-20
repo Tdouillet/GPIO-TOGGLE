@@ -5,10 +5,10 @@
 #define GPIO_CHIP "/dev/gpiochip0"
 #define GPIO_LINE 17
 
-int main (int argc, char* argv[]){
+int main (){
 
-	struct gpiod_chip* chip;
-	struct gpiod_line* line;
+	struct gpiod_chip *chip;
+	struct gpiod_line *line;
 	int value = 0;
 
 	chip = gpiod_chip_open(GPIO_CHIP);
