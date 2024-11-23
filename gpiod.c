@@ -25,7 +25,7 @@ int main (){
 	}
 
 	if (gpiod_line_request_output(line,"gpio-toggle",0) < 0){
-		perror("Ta mère!");
+		perror("Output request failed!");
 		gpiod_chip_close(chip);
 		return 1;
 	}
