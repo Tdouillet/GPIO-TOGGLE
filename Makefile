@@ -13,7 +13,7 @@ $(EXE): $(OBJS)
 install: $(EXE)
 	install -d $(INSTALL_DIR)/usr/bin
 	install -d $(INSTALL_DIR)/etc/init.d
-	install -m 755 $(SCRIPT) $(INSTALL_DIR)/etc/init.d
+	install -m 755 $(SCRIPT) $(INSTALL_DIR)/etc/init.d/$(SCRIPT)
 	install -m 755 $(EXE) $(INSTALL_DIR)/usr/bin/$(EXE)
 
 clean:
